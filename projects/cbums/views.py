@@ -71,7 +71,7 @@ def inputInfo(request):
         data = TbMember(m_name=name, class_no=school_number, password=input_password,department="computer",sysop_status=1)
         data.save()
         ip = get_client_ip(request)
-        print("ip : %s sign is succeed"%ip)
+        print("ip : %s signUp is succeed"%ip)
         return render(request, 'cbums/default/default.html')
     else:
         return render(request, 'cbums/signUp/inputSignUpContent/inputSignUpContent.html')
