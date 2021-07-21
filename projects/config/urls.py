@@ -17,14 +17,18 @@ from os import name
 from django.contrib import admin
 from django.urls import path
 
-from cbums.views import views
+from cbums.views import defaultPage
+from cbums.views import signUp
+from cbums.views import inputCode
+from cbums.views import inputInfo
+from cbums.views import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.defaultPage, name="root"),
-    path('signUp/',views.signUp, name="signup"),
-    path('inputCode/',views.inputCode, name = "inputcode"),
-    path('inputInfo/',views.inputInfo, name="inputinfo"),
-    path('login/',views.login, name="login"),
+    path('', defaultPage.defaultPage, name="root"),
+    path('signUp/',signUp.signUp, name="signup"),
+    path('inputCode/',inputCode.inputCode, name = "inputcode"),
+    path('inputInfo/',inputInfo.inputInfo, name="inputinfo"),
+    path('login/',login.login, name="login"),
 ]
 
