@@ -17,7 +17,7 @@ from os import name
 from django.contrib import admin
 from django.urls import path
 
-from cbums import views
+from cbums.views import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
