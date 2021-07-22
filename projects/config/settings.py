@@ -175,5 +175,5 @@ EMAIL_USE_TLS = True			 # TLS 보안 설정
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER	 # 응답 메일 관련 설정
 
 
-# session expire (10 minutes)
+# session expire (5 minutes)
 SESSION_COOKIE_AGE = 60 * 5
