@@ -11,5 +11,5 @@ venv/
 # 캐시
 __pycache__/
 
-# setting.py
-projects/config/settings.py
+# smtp 세팅 파일
+projects/email_setting.py
